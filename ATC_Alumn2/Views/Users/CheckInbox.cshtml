@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@model List<MimeKit.MimeMessage>
+
+<h2 class="profile-title">Inbox</h2>
+
+    <table class="table inbox-table">
+        <thead>
+            <tr>
+                <th>From</th>
+                <th>Subject</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var email in Model)
+            {
+                <tr>
+                    <td>@email.From</td>
+                    <td>@email.Subject</td>
+                    <td>@email.Date</td>
+                </tr>
+            }
+        </tbody>
+    </table>

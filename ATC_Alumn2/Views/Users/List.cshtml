@@ -1,0 +1,222 @@
+﻿@model List<ATCalumni1.Models.Entities.Users>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        width: 900px;
+        margin: 100px auto;
+    }
+
+        .custom-container h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #333;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+            .custom-container h1::after {
+                content: '';
+                display: block;
+                width: 120px; 
+                height: 3px;
+                background-color: #00DBB5;
+                margin: 10px auto 0; 
+                border-radius: 5px;
+            }
+
+
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .user-info {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 350px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .user-info:hover {
+            transform: translateY(-5px);
+        }
+
+    .profile-image {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .user-info h2 {
+        margin: 10px 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .user-info p {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+
+    .user-info strong {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .user-links {
+        margin-top: 15px;
+    }
+
+        .user-links a {
+            display: inline-block;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+            .user-links a:hover {
+                color: #0056b3;
+                text-decoration: underline;
+            }
+
+    .actions {
+        margin-top: 15px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+</style>
+
+
+<h2 class="profile-title">All Users</h2>
+
+
+    <div class="container1">
+    @if (!User.IsInRole("Admin"))
+    {
+        <p style ="color:Red;">You do not have access to this page.</p>
+    }
+    @if (User.IsInRole("Admin"))
+    {
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var user in Model)
+            {
+                <div class="user-info">
+                  
+                    @if (user.ProfileImage != null && user.ProfileImage.Length > 0)
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(user.ProfileImage)" alt="User Profile" class="profile-image" />
+                    }
+                    else
+                    {
+                        <img src="https://via.placeholder.com/150" alt="Default Profile Image" class="profile-image" />
+                    }
+
+                    <h2>@($"{user.FirstName} {user.LastName}")</h2>
+                    <p><strong>Email: </strong>@(user.Email ?? "N/A")</p>
+                    <p><strong>Phone Number: </strong>@(user.PhoneNumber ?? "N/A")</p>
+                    <p><strong>Current Job Title: </strong>@(user.CurrentJobTitle ?? "N/A")</p>
+                    <p><strong>Organization: </strong>@(user.Organization ?? "N/A")</p>
+                    <p>
+                        <strong>Year of Graduation: </strong>@if (user.YearOfGraduation > 0)
+                        {
+                            <span>@user.YearOfGraduation</span>
+                        }
+                        else
+                        {
+                            <span>N/A</span>
+                        }
+                    </p>
+                    <p><strong>Semester of Graduation: </strong>@(user.SemesterOfGraduation ?? "N/A")</p>
+                    @if (user.IsMentor.Equals(true) && user.IsAdmin.Equals(false))
+                    {
+                        <p><strong>Role: </strong>Mentor</p>
+                    }
+                    @if (user.IsMentor.Equals(true) && user.IsAdmin.Equals(true))
+                    {
+                        <p><strong>Role: </strong>Admin/Mentor</p>
+                    }
+                    @if (user.IsAdmin.Equals(true) && user.IsMentor.Equals(false))
+                    {
+                        <p><strong>Role: </strong>Admin</p>
+                    }
+                    @if (user.IsStudent.Equals(true))
+                    {
+                        <p><strong>Role: </strong>Student</p>
+                    }
+
+                    <div class="user-links">
+                        @if (!string.IsNullOrWhiteSpace(user.GitHubProfile))
+                        {
+                            <a href="@user.GitHubProfile" target="_blank">GitHub</a>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(user.LinkedInProfile))
+                        {
+                            <a href="@user.LinkedInProfile" target="_blank">LinkedIn</a>
+                        }
+                    </div>
+
+              
+                    <div class="actions">
+                        <a class="btn btn-primary" asp-controller="Users" asp-action="Edit" asp-route-id="@user.UserID">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@user.UserID" class="btn btn-danger"
+                           onclick="return confirm('Are you sure you want to delete this profile?');">Delete Profile</a>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No users found.</p>
+        }
+    }
+    </div>

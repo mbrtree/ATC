@@ -1,0 +1,146 @@
+﻿@model List<ATCalumni1.Models.Entities.Users>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        width: 900px;
+        margin: 100px auto;
+    }
+
+    .custom-container h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #333;
+        font-family: 'Georgia', serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    .custom-container h1::after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 3px;
+        background-color: #00DBB5;
+        margin: 10px auto 0;
+        border-radius: 5px;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .user-info {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 350px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .user-info:hover {
+        transform: translateY(-5px);
+    }
+
+    .profile-image {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .user-info h2 {
+        margin: 10px 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .user-info p {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+
+    .user-info strong {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .user-links {
+        margin-top: 15px;
+    }
+
+    .user-links a {
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .user-links a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+</style>
+
+<h2 class="profile-title">Mentors</h2>
+    <div class="container1">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var mentor in Model)
+            {
+                <div class="user-info">
+                    <!-- Profile Image -->
+                    @if (mentor.ProfileImage != null && mentor.ProfileImage.Length > 0)
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(mentor.ProfileImage)" alt="Mentor Profile" class="profile-image" />
+                    }
+                    else
+                    {
+                        <img src="https://via.placeholder.com/150" alt="Default Profile Image" class="profile-image" />
+                    }
+
+                    <!-- Mentor Information -->
+                    <h2>@($"{mentor.FirstName} {mentor.LastName}")</h2>
+                    <p><strong>Year of Graduation:</strong> @(mentor.YearOfGraduation > 0 ? mentor.YearOfGraduation.ToString() : "N/A")</p>
+                    <p><strong>Email:</strong> <a href="mailto:@mentor.Email">@mentor.Email</a></p>
+
+                    <!-- Social Links -->
+                    <div class="user-links">
+                        @if (!string.IsNullOrWhiteSpace(mentor.LinkedInProfile))
+                        {
+                            <a href="@mentor.LinkedInProfile" target="_blank">LinkedIn</a>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(mentor.GitHubProfile))
+                        {
+                            <a href="@mentor.GitHubProfile" target="_blank">GitHub</a>
+                        }
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No mentors found.</p>
+        }
+    </div>

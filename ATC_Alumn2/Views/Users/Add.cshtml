@@ -1,0 +1,209 @@
+﻿@model ATC_Alumn2.Models.AddUserViewModel
+
+@{
+    ViewData["Title"] = "Add";
+}
+<style>
+
+    .custom-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        width: 800px;
+        margin: 100px auto;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .password-input{
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        justify-content: left;
+    }
+
+    .password-container {
+        justify-content: center;
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .role-container {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+    }
+
+    .role-selection-label {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .radio-group {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .profile-container {
+        grid-column: span 2;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+
+    .small-input {
+        width: 300px;
+        padding: 6px;
+    }
+
+    .btn-container {
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+ 
+    .btn-primary {
+        background-color: #00a689; 
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #00BFA5; 
+        }
+
+    .confirm-message {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .login-url {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<h2 class="profile-title">Create Account</h2>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+@if (ViewBag.Message != null)
+{
+    <div class="confirm-message" style="color: green;">@ViewBag.Message</div>
+}
+<form asp-action="Add" method="post" enctype="multipart/form-data">
+        <div class="form-container">
+            <div class="form-group">
+                <label class="form-label">First Name:</label>
+                <input type="text" class="form-control" asp-for="FirstName" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Last Name:</label>
+                <input type="text" class="form-control" asp-for="LastName" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Email:</label>
+                <input type="email" class="form-control" asp-for="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="password-container">
+                <label asp-for="Password" class="form-label">Password:</label>
+                <input type="password" asp-for="Password" class="password-input" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="password-container">
+                <label asp-for="ConfirmPassword" class="form-label">Confirm Password:</label>
+                <input type="password" asp-for="ConfirmPassword" class="password-input" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" asp-for="PhoneNumber" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Current Job Title:</label>
+                <input type="text" class="form-control" asp-for="CurrentJobTitle" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Organization:</label>
+                <input type="text" class="form-control" asp-for="Organization" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Year of Graduation:</label>
+                <input type="number" class="form-control" asp-for="YearOfGraduation" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">Semester of Graduation:</label>
+                <input type="text" class="form-control" asp-for="SemesterOfGraduation" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">GitHub Profile:</label>
+                <input type="url" class="form-control" asp-for="GitHubProfile" />
+            </div>
+            <div class="form-group">
+                <label class="form-label">LinkedIn Profile:</label>
+                <input type="url" class="form-control" asp-for="LinkedInProfile" />
+            </div>
+            <div class="profile-container">
+                <label class="form-label">Profile Image:</label>
+                <input type="file" class="form-control small-input" asp-for="ProfileImage" />
+            </div>
+            <div class="role-container">
+                <div class="radio-group">
+                    <label class="form-radio-label form-label role-selection-label" for="Student">Student: </label>
+                    <input type="radio" class="form-radio-input" id="Student" asp-for="Role" name="Role" value="Student" />
+                    <label class="form-radio-label form-label role-selection-label" for="Mentor">Mentor: </label>
+                    <input type="radio" class="form-radio-input" id="Mentor" asp-for="Role" name="Role" value="Mentor" />
+                    
+                </div>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+</form>
+<div class="login-url">
+    Already have an account? <a asp-action="Login">Login</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

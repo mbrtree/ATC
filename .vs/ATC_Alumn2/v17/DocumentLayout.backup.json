@@ -1,0 +1,318 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\services\\emailinboxservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\services\\emailinboxservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\models\\adduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\models\\adduserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\mentorslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\mentorslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\checkinbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\checkinbox.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\views\\users\\securepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\views\\users\\securepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|c:\\users\\esmal\\desktop\\crud\\atc_alumni2024\\atc_alumn2\\atc_alumn2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FBCE854-0D83-493D-BC75-2F2891D46EF5}|ATC_Alumn2\\ATC_Alumn2.csproj|solutionrelative:atc_alumn2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAOkAAAAAAAAAAAAUwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:17:09.522Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\appsettings.json",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\appsettings.json",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\appsettings.json",
+              "RelativeToolTip": "ATC_Alumn2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-03T21:11:08.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Entities\\Users.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Entities\\Users.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Entities\\Users.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Entities\\Users.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T20:46:43.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Add.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\Add.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Add.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\Add.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:09:33.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\List.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\List.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\List.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\List.cshtml",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAAANYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:37:56.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Delete.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:22:20.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\MyProfile.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\MyProfile.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\MyProfile.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:38:21.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:08:52.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Login.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\Login.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\Login.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:01:42.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T00:57:46.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddUserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Models\\AddUserViewModel.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Models\\AddUserViewModel.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Models\\AddUserViewModel.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Models\\AddUserViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:44:58.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmailInboxService.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Services\\EmailInboxService.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Services\\EmailInboxService.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Services\\EmailInboxService.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Services\\EmailInboxService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:08:38.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MentorsList.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\MentorsList.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\MentorsList.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\MentorsList.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\MentorsList.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAH8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:22:27.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CheckInbox.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\CheckInbox.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\CheckInbox.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\CheckInbox.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\CheckInbox.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:39:41.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA3wB8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:45:06.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:45:56.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ATC_Alumn2\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:50:43.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SecurePage.cshtml",
+              "DocumentMoniker": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\SecurePage.cshtml",
+              "RelativeDocumentMoniker": "ATC_Alumn2\\Views\\Users\\SecurePage.cshtml",
+              "ToolTip": "C:\\Users\\esmal\\Desktop\\CRUD\\ATC_Alumni2024\\ATC_Alumn2\\ATC_Alumn2\\Views\\Users\\SecurePage.cshtml",
+              "RelativeToolTip": "ATC_Alumn2\\Views\\Users\\SecurePage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:50:58.548Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

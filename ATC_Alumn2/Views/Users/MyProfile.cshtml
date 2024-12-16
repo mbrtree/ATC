@@ -1,0 +1,47 @@
+﻿@model ATCalumni1.Models.Entities.Users
+
+<div class="profile-card">
+    <h2 class="profile-title">My Profile</h2>
+    <h5>@Model.FirstName @Model.LastName</h5>
+    <p class="profile-detail"><strong>Email:</strong> @Model.Email</p>
+    <p class="profile-detail"><strong>Phone Number:</strong> @Model.PhoneNumber</p>
+    <p class="profile-detail"><strong>Current Job Title:</strong> @Model.CurrentJobTitle</p>
+    <p class="profile-detail"><strong>Organization:</strong> @Model.Organization</p>
+    <p class="profile-detail"><strong>Year of Graduation:</strong> @Model.YearOfGraduation</p>
+    <p class="profile-detail"><strong>Semester of Graduation:</strong> @Model.SemesterOfGraduation</p>
+    @if (Model.IsMentor.Equals(true) && Model.IsAdmin.Equals(false) && Model.IsStudent.Equals(false))
+    {
+        <p class="profile-detail"><strong>Role:</strong> Mentor</p>
+        <div class="profile-buttons">
+            <a asp-action="Delete" asp-route-id="@Model.UserID" class="btn btn-danger"
+               onclick="return confirm('Are you sure you want to delete your profile?');">Delete Profile</a>
+        </div>
+    }
+    @if (Model.IsAdmin.Equals(true) && Model.IsStudent.Equals(false) && Model.IsMentor.Equals(false))
+    {
+        <p class="profile-detail"><strong>Role:</strong> Admin</p>
+        <div class="profile-buttons">
+            <a asp-action="Edit" asp-route-id="@Model.UserID" class="btn btn-primary">Edit Profile</a>
+            <a asp-action="Delete" asp-route-id="@Model.UserID" class="btn btn-danger"
+               onclick="return confirm('Are you sure you want to delete your profile?');">Delete Profile</a>
+        </div>
+    }
+
+    @if (Model.IsAdmin.Equals(true) && Model.IsMentor.Equals(true))
+    {
+        <p class="profile-detail"><strong>Role:</strong> Admin/Mentor</p>
+        <div class="profile-buttons">
+            <a asp-action="Edit" asp-route-id="@Model.UserID" class="btn btn-primary">Edit Profile</a>
+            <a asp-action="Delete" asp-route-id="@Model.UserID" class="btn btn-danger"
+               onclick="return confirm('Are you sure you want to delete your profile?');">Delete Profile</a>
+        </div>
+    }
+    @if (Model.IsStudent.Equals(true))
+    {
+        <p class="profile-detail"><strong>Role:</strong> Student</p>
+        <div class="profile-buttons">
+            <a asp-action="Delete" asp-route-id="@Model.UserID" class="btn btn-danger"
+               onclick="return confirm('Are you sure you want to delete your profile?');">Delete Profile</a>
+        </div>
+    }
+</div>

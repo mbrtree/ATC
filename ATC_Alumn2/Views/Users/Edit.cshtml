@@ -1,0 +1,73 @@
+﻿@model ATCalumni1.Models.Entities.Users
+
+
+    <h2 class="profile-title">Edit User</h2>
+
+
+    @if (Model is null)
+    {
+        <p>No user was found with this Id</p>
+    }
+@if (!User.IsInRole("Admin"))
+{
+    <p style="color:Red;">You do not have access to this page.</p>
+}
+@if (ViewBag.Message != null)
+{
+    <div class="confirm-message" style="color: green;">@ViewBag.Message</div>
+}
+else
+    {
+        <form asp-action="Edit" asp-route-id="@Model.UserID" method="post">
+
+            <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" asp-for="FirstName" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" asp-for="LastName" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" asp-for="Email" />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="Password" />
+            </div>
+
+            
+
+            <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" asp-for="PhoneNumber" />
+            </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Student" asp-for="IsStudent" />
+                    <label class="form-check-label" for="Student">Student</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Mentor" asp-for="IsMentor" />
+                    <label class="form-check-label" for="Mentor">Mentor</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="Admin" asp-for="IsAdmin" />
+                    <label class="form-check-label" for="Admin">Admin</label>
+                </div>
+            </div>
+
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            <a asp-action="Delete" asp-route-id="@Model.UserID" class="btn btn-danger"
+               onclick="return confirm('Are you sure you want to delete your profile?');">Delete Profile</a>
+            </div>
+        </form>
+    }
+
